@@ -20,6 +20,7 @@ export default await antfu(
 			'style/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
 			'style/array-bracket-newline': ['error', { multiline: true }],
 			'style/array-element-newline': ['error', 'consistent'],
+			'antfu/top-level-function': 'off',
 		},
 	},
 	{

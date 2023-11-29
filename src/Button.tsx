@@ -1,11 +1,11 @@
-import type { JSXElement } from 'solid-js';
+import type { JSXElement, ParentComponent } from 'solid-js';
 
-function ButtonComponent(): JSXElement {
+const ButtonComponent: ParentComponent = (props): JSXElement => {
 	return (
-		<div>
-			Something!
-		</div>
+		<button>
+			{props.children}
+		</button>
 	);
-}
+};
 
 export default ButtonComponent;
