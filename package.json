@@ -9,9 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@antfu/eslint-config": "^2.1.1",
     "solid-js": "^1.8.5"
   },
   "devDependencies": {
+    "eslint": "^8.54.0",
     "typescript": "^5.2.2",
     "unocss": "^0.57.7",
     "vite": "^5.0.0",

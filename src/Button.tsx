@@ -1,12 +1,11 @@
-import {JSXElement} from "solid-js";
+import type { JSXElement } from 'solid-js';
 
-const ButtonComponent = (): JSXElement => {
-
-
-  return (
-    <>
-    </>
-  )
+function ButtonComponent(): JSXElement {
+	return (
+		<div>
+			Something!
+		</div>
+	);
 }
 
-export default ButtonComponent
+export default ButtonComponent;
