@@ -25,7 +25,7 @@ export default await antfu(
 		},
 	},
 	{
-		files: ['tsconfig.json', 'package.json'],
+		files: ['tsconfig.json', 'tsconfig.node.json', 'package.json'],
 		rules: {
 			'jsonc/sort-keys': 'off',
 		},

@@ -1,26 +1,48 @@
 {
-  "name": "button-test",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@kevintyj/color": "^0.1.1",
-    "@unocss/reset": "^0.57.7",
-    "solid-js": "^1.8.5"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.1.1",
-    "@unocss/eslint-config": "^0.57.7",
-    "@unocss/preset-uno": "^0.57.7",
-    "eslint": "^8.54.0",
-    "typescript": "^5.2.2",
-    "unocss": "^0.57.7",
-    "vite": "^5.0.0",
-    "vite-plugin-solid": "^2.7.2"
-  }
+	"name": "@kevintyj/ambient-button",
+	"private": false,
+	"version": "0.0.0",
+	"type": "module",
+	"author": "Kevin Taeyoon Jin <hello@kevintyj.com>",
+	"license": "BSD-3-Clause",
+	"homepage": "https://github.com/kevintyj/ambient-button#readme",
+	"repository": "github:kevintyj/ambient-button",
+	"bugs": {
+		"url": "https://github.com/kevintyj/ambient-button/issues"
+	},
+	"keywords": [
+		"ui",
+		"ambient",
+		"accessibility"
+	],
+	"scripts": {
+		"prepare": "husky install",
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"lint:es": "eslint .",
+		"ci": "pnpm run lint:es && pnpm run build"
+	},
+	"dependencies": {
+		"@kevintyj/color": "^0.1.1",
+		"@unocss/reset": "^0.57.7",
+		"solid-js": "^1.8.5"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^2.1.1",
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@unocss/eslint-config": "^0.57.7",
+		"@unocss/preset-uno": "^0.57.7",
+		"eslint": "^8.54.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.1.0",
+		"typescript": "^5.2.2",
+		"unocss": "^0.57.7",
+		"vite": "^5.0.0",
+		"vite-plugin-solid": "^2.7.2"
+	},
+	"lint-staged": {
+		"*": "eslint --fix"
+	}
 }
