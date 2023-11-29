@@ -1,8 +1,14 @@
-import type { JSXElement, ParentComponent } from 'solid-js';
+import type { JSXElement } from 'solid-js';
+import type { darkColorsType, lightColorsType } from '@kevintyj/color';
 
-const ButtonComponent: ParentComponent = (props): JSXElement => {
+interface ButtonProps {
+	children?: JSXElement
+	color: lightColorsType | darkColorsType
+}
+
+const ButtonComponent = (props: ButtonProps): JSXElement => {
 	return (
-		<button>
+		<button class="bg-blue-5">
 			{props.children}
 		</button>
 	);
