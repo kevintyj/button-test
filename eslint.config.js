@@ -14,6 +14,11 @@ export default await antfu(
 			'**/dist',
 			'.idea',
 		],
+		overrides: {
+			typescript: {
+				'ts/consistent-type-definitions': ['error', 'type'],
+			},
+		},
 	},
 	{
 		rules: {
