@@ -6,7 +6,6 @@ const DarkModeToggle = () => {
 	return (
 		<button
 			onClick={() => toggleTheme()}
-			class="absolute bottom-9"
 		>
 			Toggle Dark/Light Mode | Current:
 			{' '}
