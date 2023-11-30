@@ -21,10 +21,10 @@ const ButtonComponent = (props: ButtonProps): JSXElement => {
 
 	const sizeClass: Record<ButtonSizeProps, string> = {
 		'sm': 'h-6 text-sm px-2',
-		'md': 'h-7 text-sm px-2.5',
-		'base': 'h-[30px] text-sm px-3',
-		'lg': 'h-8 text-base px-3.5',
-		'xl': 'h-9 text-lg px-4',
+		'md': 'h-7 text-sm px-2',
+		'base': 'h-[30px] text-sm px-2.5',
+		'lg': 'h-8 text-base px-3',
+		'xl': 'h-9 text-lg px-3.5',
 		'2xl': 'h-10 text-xl px-4',
 	};
 

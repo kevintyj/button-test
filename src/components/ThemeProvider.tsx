@@ -33,7 +33,9 @@ export const ThemeProvider: ParentComponent = (props) => {
 	};
 
 	onMount(() => {
-		setThemeItem(theme());
+		localStorage.getItem('color-theme')
+			? setThemeItem(localStorage.getItem('color-theme')! as ThemeTypes)
+			: setThemeItem(theme());
 	});
 
 	const contextObject: ThemeContextValue = {
