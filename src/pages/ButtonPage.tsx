@@ -5,7 +5,9 @@ import ButtonComponent, { type ButtonSizeProps } from '../components/Button.tsx'
 import SelectConsumer from '../components/SelectConsumer.tsx';
 
 const ButtonPage = () => {
-	const fullColors: lightColorsType[] = [
+	const fullColors: (lightColorsType | 'default')[] = [
+		'default',
+		'neutral',
 		'ocean',
 		'blue',
 		'indigo',
