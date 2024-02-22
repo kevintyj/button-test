@@ -11,8 +11,8 @@ const getInitialColorTheme = (): 'light' | 'dark' => {
 type ThemeTypes = 'light' | 'dark';
 
 type ThemeContextValue = {
-	theme: Accessor<ThemeTypes>
-	toggleTheme: (theme?: ThemeTypes) => void
+	theme: Accessor<ThemeTypes>;
+	toggleTheme: (theme?: ThemeTypes) => void;
 };
 
 const ThemeContext = createContext<ThemeContextValue>();

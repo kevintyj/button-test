@@ -2,9 +2,9 @@ import type { Setter } from 'solid-js';
 import { For } from 'solid-js';
 
 type SelectConsumerProps = {
-	selectOptions: string[]
-	setOptions: Setter<any>
-	defaultValue?: string
+	selectOptions: string[];
+	setOptions: Setter<any>;
+	defaultValue?: string;
 };
 const SelectConsumer = (props: SelectConsumerProps) => {
 	return (

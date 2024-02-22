@@ -7,9 +7,9 @@ import { useTheme } from './ThemeProvider.tsx';
 export type ButtonSizeProps = 'sm' | 'md' | 'base' | 'lg' | 'xl' | '2xl';
 
 type ButtonProps = {
-	children?: JSXElement
-	color: lightColorsType | 'default'
-	size?: ButtonSizeProps
+	children?: JSXElement;
+	color: lightColorsType | 'default';
+	size?: ButtonSizeProps;
 };
 
 const ButtonComponent = (props: ButtonProps): JSXElement => {
