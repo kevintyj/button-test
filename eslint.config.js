@@ -26,6 +26,20 @@ export default await antfu(
 			'style/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
 			'style/array-bracket-newline': ['error', { multiline: true }],
 			'style/array-element-newline': ['error', 'consistent'],
+			'style/member-delimiter-style': [
+				'error',
+				{
+					multiline: {
+						delimiter: 'semi',
+						requireLast: true,
+					},
+					singleline: {
+						delimiter: 'semi',
+						requireLast: false,
+					},
+					multilineDetection: 'brackets',
+				},
+			],
 			'antfu/top-level-function': 'off',
 		},
 	},
